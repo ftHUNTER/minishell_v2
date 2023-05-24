@@ -6,7 +6,7 @@
 /*   By: rchmouk <rchmouk@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/21 23:07:43 by rchmouk           #+#    #+#             */
-/*   Updated: 2023/05/24 07:44:37 by rchmouk          ###   ########.fr       */
+/*   Updated: 2023/05/25 00:46:38 by rchmouk          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,6 +98,8 @@ void	doubl_cout(int *i, t_env *env, char **str)
 		else
 			(*i)++;
 	}
+	if ((*str)[*i] == '\"')
+		(*i)++;
 }
 
 char	*ft_expand(char *str, t_env *env, int i)
